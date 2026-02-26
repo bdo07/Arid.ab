@@ -1,11 +1,13 @@
 "use client";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Projects from "../components/Projects";
-import Contact from "../components/Contact";
 
+import dynamic from "next/dynamic";
 
+// Dynamic imports (disable SSR)
+const Navbar = dynamic(() => import("../components/Navbar"), { ssr: false });
+const Hero = dynamic(() => import("../components/Hero"), { ssr: false });
+const About = dynamic(() => import("../components/About"), { ssr: false });
+const Projects = dynamic(() => import("../components/Projects"), { ssr: false });
+const Contact = dynamic(() => import("../components/Contact"), { ssr: false });
 
 export default function Home() {
   return (
