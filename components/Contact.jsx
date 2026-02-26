@@ -9,7 +9,7 @@ export default function Contact() {
     <section id="contact" className="relative overflow-hidden py-24 bg-[#0F172A] text-[#E2E8F0]">
       
       {/* Tactical Target Cursor */}
-      <TargetCursor 
+      <TargetCursor
         spinDuration={2}
         hideDefaultCursor={true}
         parallaxOn={true}
@@ -66,7 +66,7 @@ export default function Contact() {
               id="name"
               // Added cursor-target class
               className="cursor-target bg-[#1e293b] border border-slate-700 rounded-lg px-4 py-3 text-[#E2E8F0] focus:outline-none focus:border-[#3B82F6] focus:ring-1 focus:ring-[#3B82F6] transition-all"
-              placeholder="John Doe"
+              placeholder="sbee3"
             />
           </div>
 
@@ -77,7 +77,7 @@ export default function Contact() {
               id="email"
               // Added cursor-target class
               className="cursor-target bg-[#1e293b] border border-slate-700 rounded-lg px-4 py-3 text-[#E2E8F0] focus:outline-none focus:border-[#3B82F6] focus:ring-1 focus:ring-[#3B82F6] transition-all"
-              placeholder="john@example.com"
+              placeholder="name@example.com"
             />
           </div>
 
@@ -102,7 +102,7 @@ export default function Contact() {
           </motion.button>
         </motion.form>
       </div>
-      
+
       {/* Footer */}
       <div className="relative z-10 text-center mt-32 text-[#E2E8F0]/50 font-mono text-sm">
         <p>Built with Next.js & Tailwind CSS</p>
