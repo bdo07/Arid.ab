@@ -13,7 +13,8 @@ export default function Hero() {
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0F172A] pt-20">
       
       {/* Antigravity Background Animation */}
-      <div className="absolute inset-0 z-0 w-full h-full flex items-center justify-center opacity-70 pointer-events-none">
+      
+<div className="absolute inset-0 z-0 w-full h-full flex items-center justify-center opacity-70 pointer-events-none">
         <Antigravity
           count={300}
           magnetRadius={10}
@@ -32,6 +33,9 @@ export default function Hero() {
           fieldStrength={10}
         />
       </div>
+
+
+
 
       {/* Hero Content (z-10 keeps it above the animation) */}
       <div className="max-w-7xl mx-auto px-6 relative z-10 text-center md:text-left flex flex-col md:items-start items-center">
