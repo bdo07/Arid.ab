@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Antigravity from "./Antigravity"; 
+//import Antigravity from "./Antigravity"; 
 import ScrambledText from "./ScrambledText"; 
 import LogoLoop from './LogoLoop';
 import DomeGallery from './DomeGallery'; // <-- Added Import
@@ -26,7 +26,9 @@ export default function About() {
     <section id="about" className="relative overflow-hidden pt-24 pb-12 bg-[#0F172A] text-[#E2E8F0]">
       
       {/* Antigravity Background */}
-      <div className="absolute inset-0 z-0 w-full h-full flex items-center justify-center opacity-70 pointer-events-none">
+      
+      {/*
+    <div className="absolute inset-0 z-0 w-full h-full flex items-center justify-center opacity-70 pointer-events-none">
         <Antigravity
           count={300}
           magnetRadius={10}
@@ -44,7 +46,8 @@ export default function About() {
           particleShape="capsule"
           fieldStrength={10}
         />
-      </div>
+      </div> */}
+
 
       <div className="max-w-7xl mx-auto px-6 relative z-10 mb-20">
         <motion.div
