@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Antigravity from "./Antigravity"; 
 import ScrambledText from "./ScrambledText"; 
 import LogoLoop from './LogoLoop';
+import DomeGallery from './DomeGallery'; // <-- Added Import
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiPostgresql } from 'react-icons/si';
 
 const skills = [
@@ -22,7 +23,7 @@ const techLogos = [
 
 export default function About() {
   return (
-    <section id="about" className="relative overflow-hidden py-24 bg-[#0F172A] text-[#E2E8F0]">
+    <section id="about" className="relative overflow-hidden pt-24 pb-12 bg-[#0F172A] text-[#E2E8F0]">
       
       {/* Antigravity Background */}
       <div className="absolute inset-0 z-0 w-full h-full flex items-center justify-center opacity-70 pointer-events-none">
@@ -45,7 +46,7 @@ export default function About() {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 relative z-10 mb-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -81,12 +82,11 @@ export default function About() {
                   whileHover={{ x: 5, color: "#3B82F6" }}
                   className="flex items-center font-mono text-sm"
                 >
-
+                  <span className="text-[#3B82F6] mr-2">▹</span> {skill}
                 </motion.li>
               ))}
             </ul>
           </motion.div>
-
 
           <motion.div
             initial={{ opacity: 0, x: 30 }}
@@ -106,7 +106,7 @@ export default function About() {
               </div>
             </div>
 
-            {/* Logo Loop Animation (Below Image) */}
+            {/* Logo Loop Animation */}
             <div className="w-full max-w-sm h-[80px] relative overflow-hidden mt-4">
                <LogoLoop
                   logos={techLogos}
@@ -125,6 +125,24 @@ export default function About() {
           </motion.div>
         </div>
       </div>
+
+      {/* Dome Gallery Section (At the bottom of About) */}
+      <motion.div 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="w-full h-[500px] relative z-10 mt-10 cursor-grab active:cursor-grabbing"
+      >
+        <DomeGallery
+          fit={0.8}
+          minRadius={600}
+          maxVerticalRotationDeg={0}
+          segments={34}
+          dragDampening={2}
+          grayscale={true}
+        />
+      </motion.div>
+
     </section>
   );
 }
