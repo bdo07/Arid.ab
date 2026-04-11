@@ -11,9 +11,8 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0F172A] pt-20">
-      
-      {/* Antigravity Background Animation */}
-      
+
+
 <div className="absolute inset-0 z-0 w-full h-full flex items-center justify-center opacity-70 pointer-events-none">
         <Antigravity
           count={300}
@@ -39,7 +38,7 @@ export default function Hero() {
 
       {/* Hero Content (z-10 keeps it above the animation) */}
       <div className="max-w-7xl mx-auto px-6 relative z-10 text-center md:text-left flex flex-col md:items-start items-center">
-        
+
         <div className="mb-4">
           <SplitText
             text=" Hello World, I am"
@@ -52,7 +51,7 @@ export default function Hero() {
             to={{ opacity: 1, y: 0 }}
           />
         </div>
-        
+
         <div className="mb-4">
           <SplitText
             text="Abderrahmane."
@@ -65,7 +64,7 @@ export default function Hero() {
             to={{ opacity: 1, y: 0 }}
           />
         </div>
-        
+
         <div className="mb-8">
           <SplitText
             text="Full Stack Developer"
@@ -98,7 +97,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.5 }} // Waits for the text to finish animating before popping in
         >
-          
+
 
 
 
@@ -107,8 +106,8 @@ export default function Hero() {
         </motion.div>
 
 
-        
-  
+
+
 <CircularText
   text="full stack Developer "
   onHover="goBonkers"
