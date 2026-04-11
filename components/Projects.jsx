@@ -100,12 +100,12 @@ export default function Projects() {
                   </svg>
                 </a>
               </div>
-              
+
               <h3 className="text-xl font-bold mb-3 text-[#E2E8F0]">{project.title}</h3>
               <p className="text-[#E2E8F0]/70 text-sm mb-6 flex-grow leading-relaxed">
                 {project.description}
               </p>
-              
+
               <ul className="flex flex-wrap gap-3 mt-auto font-mono text-xs text-[#3B82F6]">
                 {project.tech.map((item, i) => (
                   <li key={i}>{item}</li>
