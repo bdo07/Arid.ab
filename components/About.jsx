@@ -1,14 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-//import Antigravity from "./Antigravity"; 
-import ScrambledText from "./ScrambledText"; 
+//import Antigravity from "./Antigravity";
+import ScrambledText from "./ScrambledText";
 import LogoLoop from './LogoLoop';
 import DomeGallery from './DomeGallery'; // <-- Added Import
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiPostgresql } from 'react-icons/si';
 
 const skills = [
-  "JavaScript (ES6+)", "TypeScript", "React", "Next.js", 
+  "JavaScript (ES6+)", "TypeScript", "React", "Next.js",
   "Node.js", "Tailwind CSS", "Framer Motion", "PostgreSQL", "Git"
 ];
 
@@ -24,9 +24,7 @@ const techLogos = [
 export default function About() {
   return (
     <section id="about" className="relative overflow-hidden pt-24 pb-12 bg-[#0F172A] text-[#E2E8F0]">
-      
-      {/* Antigravity Background */}
-      
+
       {/*
     <div className="absolute inset-0 z-0 w-full h-full flex items-center justify-center opacity-70 pointer-events-none">
         <Antigravity
@@ -129,8 +127,8 @@ export default function About() {
         </div>
       </div>
 
-      {/* Dome Gallery Section (At the bottom of About) */}
-      <motion.div 
+
+      <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}

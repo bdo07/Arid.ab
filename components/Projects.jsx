@@ -40,8 +40,7 @@ const cardVariants = {
 export default function Projects() {
   return (
     <section id="projects" className="relative overflow-hidden py-24 bg-[#0F172A] text-[#E2E8F0]">
-      
-      {/* Antigravity Background Animation */}
+
       <div className="absolute inset-0 z-0 w-full h-full flex items-center justify-center opacity-70 pointer-events-none">
         <Antigravity
           count={300}
