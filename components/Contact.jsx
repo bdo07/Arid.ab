@@ -86,7 +86,7 @@ export default function Contact() {
             <textarea
               id="message"
               rows={5}
-              // Added cursor-target class
+
               className="cursor-target bg-[#1e293b] border border-slate-700 rounded-lg px-4 py-3 text-[#E2E8F0] focus:outline-none focus:border-[#3B82F6] focus:ring-1 focus:ring-[#3B82F6] transition-all resize-none"
               placeholder="Hello Abderrahmane..."
             ></textarea>
